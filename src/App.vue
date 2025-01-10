@@ -255,7 +255,16 @@ export default {
       shiningDotsBorderColor: '#1e254c',
       shiningDotsBorderWidth: 30,
       shiningDotsSize: 8,
-      shiningDotsCount: 60
+      shiningDotsCount: 60,
+      prizes:{
+        "1 Ethereum",
+        "$50 Amazon Gift Card",
+        "$50 Netflix Gift Card",
+        "$100 Uber Eat Gift Card",
+        "1 Solana",
+        "Airpods 3 Pro",
+        "Macbook Air M2"
+      }
     };
   },
   watch: {
@@ -282,7 +291,8 @@ export default {
       for (let i = 1; i <= count; i++) {
         result.push({
           color: colors[i % colors.length],  // Alternate colors
-          text: 'Slice ' + i,        // Convert number to string
+          //text: 'Slice ' + i,        // Convert number to string
+          text: prizes[i],
         });
       }
       return result;
