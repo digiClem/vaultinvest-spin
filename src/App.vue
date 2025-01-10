@@ -8,7 +8,7 @@
         <h1 class="mb-4 mb-lg-5">🎡 Try to win a Prize !</h1>
       </div>
 
-      <div class="col-12 col-lg-5 order-1 order-lg-0 mt-5">
+      <!-- <div class="col-12 col-lg-5 order-1 order-lg-0 mt-5">
 
         <fieldset class="mb-4">
 
@@ -138,7 +138,7 @@
 
         </fieldset>
 
-      </div>
+      </div>-->
 
       <div class="col-12 col-lg-7 px-lg-5 order-0 order-lg-1">
 
