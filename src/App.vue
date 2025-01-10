@@ -170,7 +170,7 @@
                 :winner-index="defaultWinner"
                 :sounds="sounds"
                 :cursor-angle="cursorAngle"
-                :cursor-position="cursorPosition"
+                :cursor-position="edge"
                 :cursor-distance="cursorDistance"
                 @spin-start="onSpinStart"
                 @spin-end="onSpinEnd">
@@ -250,7 +250,7 @@ export default {
       cursorImage,
       cursorAngle: 270,
       cursorPosition: 'edge',
-      cursorDistance: -10,
+      cursorDistance: -25,
       shiningDotsColor: '#ffffff',
       shiningDotsShineColor: '#ffd800',
       shiningDotsBorderColor: '#1e254c',
