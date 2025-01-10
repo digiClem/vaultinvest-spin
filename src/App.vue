@@ -5,7 +5,7 @@
     <div class="row align-content-start justify-content-around">
 
       <div class="col-12 text-center text-lg-start">
-        <h1 class="mb-4 mb-lg-5">🎡 Try to win a Prize !</h1>
+        
       </div>
 
       <!-- <div class="col-12 col-lg-5 order-1 order-lg-0 mt-5">
@@ -143,7 +143,7 @@
       <div class="col-12 col-lg-7 px-lg-5 order-0 order-lg-1">
 
         <div class="sticky-top">
-
+          <h1 class="mb-4 mb-lg-5">🎡 Try to win a Prize !</h1>
           <div class="fs-2 text-center">
             <div v-if="winnerResult">
               Winner: <span>{{ winnerResult.text }}</span> 🎉
