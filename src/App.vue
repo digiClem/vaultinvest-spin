@@ -346,7 +346,7 @@ export default {
     },
     onSpinEnd(winnerIndex) {
       this.isSpinning = false;
-      if(this.slices[winnerIndex] !== 'Try again'){
+      if(this.slices[winnerIndex].text !== 'Try again'){
           this.isLost = false ;
       }else{
         this.isLost = true;
