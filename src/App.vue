@@ -281,21 +281,13 @@ export default {
       ];  // Predefined colors
       const prizes = [
         "1 Ethereum",
-        "Try again",
         "$50 Amazon Gift Card",
-        "Try again",
         "$50 Netflix Gift Card",
-        "Try again",
-        "Try again",
         "$100 Uber Eat Gift Card",
-        "Try again",
         "1 Solana",
         "Try again",
-        "Try again",
         "Airpods 3 Pro",
-        "Try again",
         "Macbook Air M2",
-        "Try again"
     ]; // Prizes to Win
       for (let i = 1; i <= count; i++) {
         result.push({
