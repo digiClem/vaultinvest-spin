@@ -146,7 +146,7 @@
           <h1 class="fs-2 text-center">🎡 Try to win a Prize !</h1>
           <div class="fs-2 text-center">
             <div v-if="winnerResult">
-              Winner: <span>{{ winnerResult.text }}</span> 🎉
+              Winner: <span>{{ winnerResult.text }}</span> <span v-if="isLost">🎉</span> <span v-else>🤕</span>
             </div>
             <div v-else-if="isSpinning">
               Spinning...
@@ -239,6 +239,7 @@ export default {
       winnerResult: null,
       slices: this.createColorTextArray(8),
       isSpinning: false,
+      isLost: true,
       defaultWinner: 0,
       sounds: {
         won: wonSound,
@@ -341,14 +342,16 @@ export default {
     onSpinStart() {
       this.winnerResult = null;
       this.isSpinning = true;
+      this.isLost = true;
     },
     onSpinEnd(winnerIndex) {
       this.isSpinning = false;
       if(this.slices[winnerIndex] !== 'Try again'){
-          this.winnerResult = this.slices[winnerIndex] + "🎉" ;
+          this.isLost = false ;
       }else{
-        this.winnerResult = this.slices[winnerIndex] + "🤕" ;
+        this.isLost = true;
       }
+      this.winnerResult = this.slices[winnerIndex] ;
     }
   },
   mounted() {
