@@ -5,7 +5,7 @@
     <div class="row align-content-start justify-content-around">
 
       <div class="col-12 text-center text-lg-start">
-        <h1 class="mb-4 mb-lg-5">🎡 Vue Wheel Spinner</h1>
+        <h1 class="mb-4 mb-lg-5">🎡 Try to win a Prize !</h1>
       </div>
 
       <div class="col-12 col-lg-5 order-1 order-lg-0 mt-5">
