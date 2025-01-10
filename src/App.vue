@@ -345,9 +345,9 @@ export default {
     onSpinEnd(winnerIndex) {
       this.isSpinning = false;
       if(this.slices[winnerIndex] !== 'Try again'){
-          this.winnerResult = this.slices[winnerIndex] + 🎉 ;
+          this.winnerResult = this.slices[winnerIndex] + "🎉" ;
       }else{
-        this.winnerResult = this.slices[winnerIndex] + 🤕 ;
+        this.winnerResult = this.slices[winnerIndex] + "🤕" ;
       }
     }
   },
