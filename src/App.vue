@@ -249,9 +249,9 @@ export default {
         spinning: spinningSound
       },
       cursorImage,
-      cursorAngle: 0,
+      cursorAngle: 270,
       cursorPosition: 'edge',
-      cursorDistance: 0,
+      cursorDistance: -5,
       shiningDotsColor: '#ffffff',
       shiningDotsShineColor: '#ffd800',
       shiningDotsBorderColor: '#1e254c',
@@ -284,7 +284,6 @@ export default {
       const prizes = [
         "1 Ethereum",
         "$50 Amazon Gift Card",
-        "$50 Netflix Gift Card",
         "$100 Uber Eat Gift Card",
         "1 Solana",
         "Try again",
