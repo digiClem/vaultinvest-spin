@@ -146,7 +146,7 @@
           <h1 class="fs-2 text-center">🎡 Try to win a Prize !</h1>
           <div class="fs-2 text-center">
             <div v-if="winnerResult">
-              Winner: <span>{{ winnerResult.text }}</span> <span v-if="isLost">🎉</span> <span v-else>🤕</span>
+              Winner: <span>{{ winnerResult.text }}</span> <span v-if="isLost">🤕</span> <span v-else>🎉</span>
             </div>
             <div v-else-if="isSpinning">
               Spinning...
