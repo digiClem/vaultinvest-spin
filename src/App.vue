@@ -183,9 +183,10 @@
                 <button
                     class="spin-button"
                     :disabled="isSpinning"
-                    @click="handleSpinButtonClick"
+                    @click="spinRandom()"
+                    
                     @mouseover="handleSpinButtonHover"
-                    @mouseleave="handleSpinButtonLeave">
+                    @mouseleave="handleSpinButtonLeave"><!-- @click="handleSpinButtonClick" -->
                   Spin
                 </button>
               </template>
@@ -195,7 +196,7 @@
           </ShiningDots>
 
           <div>
-            <button
+            <!---<button
                 class="btn btn-success btn-lg rounded-pill w-100 py-4"
                 :disabled="isSpinning"
                 @click="spinRandom()">
@@ -203,7 +204,7 @@
                   <span class="visually-hidden">Loading...</span>
                 </span>
               Spin for Random
-            </button>
+            </button>-->
           </div>
 
         </div>
