@@ -143,7 +143,7 @@
       <div class="col-12 col-lg-7 px-lg-5 order-0 order-lg-1">
 
         <div class="sticky-top">
-          <h1 class="mb-4 mb-lg-5">🎡 Try to win a Prize !</h1>
+          <h1 class="fs-2 text-center">🎡 Try to win a Prize !</h1>
           <div class="fs-2 text-center">
             <div v-if="winnerResult">
               Winner: <span>{{ winnerResult.text }}</span> 🎉
