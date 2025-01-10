@@ -146,7 +146,7 @@
           <h1 class="fs-2 text-center">🎡 Try to win a Prize !</h1>
           <div class="fs-2 text-center">
             <div v-if="winnerResult">
-              Winner: <span>{{ winnerResult.text }}</span> <span v-if="isLost">🤕</span> <span v-else>🎉</span>
+              Result: <span>{{ winnerResult.text }}</span> <span v-if="isLost">🤕</span> <span v-else>🎉</span>
             </div>
             <div v-else-if="isSpinning">
               Spinning...
@@ -249,9 +249,9 @@ export default {
         spinning: spinningSound
       },
       cursorImage,
-      cursorAngle: 270,
-      cursorPosition: 'edge',
-      cursorDistance: -5,
+      cursorAngle: 0,
+      cursorPosition: cursorPosition,
+      cursorDistance: 0,
       shiningDotsColor: '#ffffff',
       shiningDotsShineColor: '#ffd800',
       shiningDotsBorderColor: '#1e254c',
