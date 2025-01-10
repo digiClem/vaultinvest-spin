@@ -294,7 +294,7 @@ export default {
         result.push({
           color: colors[i % colors.length],  // Alternate colors
           //text: 'Slice ' + i,        // Convert number to string
-          text: prizes[i],
+          text: prizes[i] ,
         });
       }
       return result;
@@ -344,7 +344,11 @@ export default {
     },
     onSpinEnd(winnerIndex) {
       this.isSpinning = false;
-      this.winnerResult = this.slices[winnerIndex];
+      if(this.slices[winnerIndex] !=== 'Try again'){
+          this.winnerResult = this.slices[winnerIndex] + 🎉 ;
+      }else{
+        this.winnerResult = this.slices[winnerIndex] + 🤕 ;
+      }
     }
   },
   mounted() {
