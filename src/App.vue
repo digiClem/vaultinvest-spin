@@ -276,6 +276,7 @@ export default {
       return '#' + Math.floor(Math.random() * 16777215).toString(16);
     },
     createColorTextArray(count) {
+      let j = 1;
       const result = [];
       const colors = [
         '#eb4d4b',
@@ -292,8 +293,16 @@ export default {
         "Try again"
     ]; // Prizes to Win
       for (let i = 1; i <= prizes.length; i++) {
+        let colorB;
+        if(prizes[i-1] == "Try again"){
+          colorB= "#898a8c",
+          }else{
+            colorB= colors[j % colors.length],  // Alternate colors
+            j=j+1;
+          }
         result.push({
-          color: colors[i % colors.length],  // Alternate colors
+          
+          color: colorB,
           //text: 'Slice ' + i,        // Convert number to string
           text: prizes[i-1] ,
         });
