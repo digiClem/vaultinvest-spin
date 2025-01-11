@@ -344,11 +344,11 @@ export default {
       this.defaultWinner = index;
       this.$refs.spinner.spinWheel(index);
     },
-    /**spinRandom() {
+    spinRandom() {
       const randomSlice = Math.floor(Math.random() * this.slices.length);
       this.$refs.spinner.spinWheel(randomSlice);
-    },**/
-    async spinRandom() {
+    },
+    /**async spinRandom() {
     try {
       const response = await fetch('/api/spin');
       if (!response.ok) {
@@ -363,7 +363,7 @@ export default {
     } catch (error) {
       console.error('Error fetching winner:', error);
     }
-  },
+  },**/
     onSpinStart() {
       this.winnerResult = null;
       this.isSpinning = true;
