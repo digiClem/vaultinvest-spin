@@ -290,7 +290,7 @@ export default {
         "Airpods 3 Pro",
         "Macbook Air M2"
     ]; // Prizes to Win
-      for (let i = 1; i <= count; i++) {
+      for (let i = 1; i <= count; ++i) {
         result.push({
           color: colors[i % colors.length],  // Alternate colors
           //text: 'Slice ' + i,        // Convert number to string
