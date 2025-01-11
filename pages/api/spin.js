@@ -7,7 +7,7 @@ export default async function handler(req, res) {
       const { APP_URL, AUTH_TOKEN } = process.env;
   
       // Faites un appel à l'API avec les informations sensibles
-      const response = await fetch(`${APP_URL}`, {
+      const response = await fetch(`${APP_URL}/spin`, {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${AUTH_TOKEN}`,
