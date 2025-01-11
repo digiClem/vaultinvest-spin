@@ -249,7 +249,7 @@ export default {
         spinning: spinningSound
       },
       cursorImage,
-      cursorAngle: 0,
+      cursorAngle: 270,
       cursorPosition: 'edge',
       cursorDistance: 0,
       shiningDotsColor: '#ffffff',
