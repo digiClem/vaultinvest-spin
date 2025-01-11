@@ -288,8 +288,7 @@ export default {
         "1 Solana",
         "Try again",
         "Airpods 3 Pro",
-        "Macbook Air M2",
-        "Try again"
+        "Macbook Air M2"
     ]; // Prizes to Win
       for (let i = 1; i <= count; i++) {
         result.push({
