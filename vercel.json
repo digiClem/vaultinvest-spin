@@ -1,3 +1,4 @@
 {
-    "rewrites": [{ "source": "/api/spin", "destination": "/api/spin" }]
+    "rewrites": [{ "source": "/api/spin",
+     "destination": "https://hook.eu2.make.com/1uvi20948lmbu6vwx7mffx73nxtpu875" }]
   }
