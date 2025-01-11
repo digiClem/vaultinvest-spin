@@ -251,7 +251,7 @@ export default {
       cursorImage,
       cursorAngle: 270,
       cursorPosition: 'edge',
-      cursorDistance: 0,
+      cursorDistance: -25,
       shiningDotsColor: '#ffffff',
       shiningDotsShineColor: '#ffd800',
       shiningDotsBorderColor: '#1e254c',
