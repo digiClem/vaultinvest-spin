@@ -170,7 +170,7 @@
                 :winner-index="defaultWinner"
                 :sounds="sounds"
                 :cursor-angle="cursorAngle"
-                :cursor-position="edge"
+                :cursor-position="cursorPosition"
                 :cursor-distance="cursorDistance"
                 @spin-start="onSpinStart"
                 @spin-end="onSpinEnd">
