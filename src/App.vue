@@ -344,10 +344,26 @@ export default {
       this.defaultWinner = index;
       this.$refs.spinner.spinWheel(index);
     },
-    spinRandom() {
+    /**spinRandom() {
       const randomSlice = Math.floor(Math.random() * this.slices.length);
       this.$refs.spinner.spinWheel(randomSlice);
-    },
+    },**/
+    async spinRandom() {
+    try {
+      const response = await fetch('/api/spin');
+      if (!response.ok) {
+        throw new Error('Failed to fetch winner');
+      }
+
+      const data = await response.json();
+
+      // Déterminez l'index du gagnant en fonction de l'API
+      const winnerIndex = data.winnerIndex; // Supposons que l'API retourne winnerIndex
+      this.$refs.spinner.spinWheel(winnerIndex);
+    } catch (error) {
+      console.error('Error fetching winner:', error);
+    }
+  },
     onSpinStart() {
       this.winnerResult = null;
       this.isSpinning = true;
