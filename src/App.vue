@@ -295,9 +295,9 @@ export default {
       for (let i = 1; i <= prizes.length; i++) {
         let colorB;
         if(prizes[i-1] == "Try again"){
-          colorB= "#898a8c",
+          colorB= "#898a8c";
           }else{
-            colorB= colors[j % colors.length],  // Alternate colors
+            colorB= colors[j % colors.length];  // Alternate colors
             j=j+1;
           }
         result.push({
